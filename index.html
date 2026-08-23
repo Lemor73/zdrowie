@@ -1361,6 +1361,7 @@
                     });
                 }
 
+                // Cytaty dolne na poszczególnych podstronach
                 let dolnyCytatHTML = "";
                 if (kat.id === "zdrowie") {
                     dolnyCytatHTML = `
@@ -1376,11 +1377,18 @@
                             <p class="health-bottom-quote-author">– Hipokrates</p>
                         </div>
                     `;
+                } else if (kat.id === "sklep") {
+                    dolnyCytatHTML = `
+                        <div class="health-bottom-quote">
+                            <p class="health-bottom-quote-text">„Suplementy nie są zamiennikiem pełnowartościowej żywności.”</p>
+                            <p class="health-bottom-quote-author">– Dr Andrew Weil</p>
+                        </div>
+                    `;
                 } else if (kat.id === "media") {
                     dolnyCytatHTML = `
                         <div class="health-bottom-quote">
-                            <div class="health-bottom-quote-author" style="margin-bottom: 6px; font-size: 14px;">Leczenie chorób przewlekłych</div>
-                            <p class="health-bottom-quote-text">„Poprawa jakości życia pacjenta, łagodzenie objawów i wspieranie organizmu w radzeniu sobie z chorobą.”</p>
+                            <p class="health-bottom-quote-text">„Lepiej zapobiegać chorobie, zanim się pojawi, niż leczyć ją, gdy już wystąpi.”</p>
+                            <p class="health-bottom-quote-author">– Huangdi Neijing</p>
                         </div>
                     `;
                 }
